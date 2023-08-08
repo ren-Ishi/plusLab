@@ -1,6 +1,6 @@
 async function fetchData() {
   try {
-    const response = await fetch('js/db.json');
+    const response = await fetch('/js/db.json');
     const jsonData = await response.json();
     
     const dataContainer = document.getElementById('data-container');
