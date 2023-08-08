@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>プラスラボ</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/post.js"></script>
+  <script>let submitted = false;</script>
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='index.html';}"></iframe>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <header></header>
+    <main>
+      <section id="newpost-area">
+        <h1>記事一覧</h1>
+        <form id="search-form">
+          <input type="text" id="search-input" placeholder="キーワードを入力してください">
+          <button type="submit">検索</button>
+        </form>
+        <div id="post-box"></div>
+      </section>
+    </main>
+    <footer>
+      <a href="#">plusLab</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
