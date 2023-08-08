@@ -1,9 +1,9 @@
 async function fetchData() {
   try {
-    const response = await fetch('db.json');
+    const response = await fetch('postDB.json');
     const jsonData = await response.json();
     
-    const newpostBox = document.getElementById('newpost-box');
+    const newpostBox = document.getElementById('post-box');
     const newPosts = jsonData.data.slice(-4);
 
     newPosts.forEach(item => {

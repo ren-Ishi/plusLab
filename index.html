@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js"></script>
+  <script>let submitted = false;</script>
+<iframe name="hidden_iframe" style="display:none;" onload="if(submitted){window.location='index.html';}"></iframe>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
@@ -15,22 +17,33 @@
 
 <body>
   <div id="container">
+    <header></header>
     <main>
       <section id="top-area">
-        <h1>ここにタイトル</h1>
+        <h1>タイトル</h1>
       </section>
       <section id="newpost-area">
         <h1>新着記事</h1>
-        <div id="newpost-box"></div>
-        <a href="html/post.html" class="btn">　他の記事も読む　>></a>
+        <div id="post-box"></div>
+        <a href="post.html" class="btn">　他の記事も読む　>></a>
       </section>
       <section id="calendar-area">
         <h1>カレンダー</h1>
       </section>
-      <section id="chats">
+      <section id="message">
         <h1>なんでもBOX</h1>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHirkqUGhVlhXpwWlmEr18vik9KwnucZHEp5bYpCjOOVAZ7g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+          <dl>
+            <dt>日々のやりたいこと、やって欲しいこと、疑問に思ったこと、感想etc.なんでも気軽に書いてください！</dt>
+            <dd><textarea name="entry.534616708" required></textarea></dd>
+          </dl>
+          <input type="submit" value="送信">
+        </form>
       </section>
     </main>
+    <footer>
+      <a href="#">plusLab</a>
+    </footer>
   </div>
 
 </body>

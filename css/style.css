@@ -4,7 +4,7 @@ body {
 
 }
 
-#container{
+#container {
   width: 100vw;
   margin: auto;
 }
@@ -14,6 +14,7 @@ h1::before {
   padding: 10px;
   color: rgb(189, 18, 66);
 }
+
 h1 {
   padding: 20px;
 }
@@ -25,13 +26,13 @@ h1 {
   min-height: 500px;
 }
 
-/* -----------------------------------------------#newpost-area */
+/* -----------------------------------------------#post-area */
 #newpost-area {
   background-color: #f2f2f2;
   padding: 10px;
 }
 
-#newpost-box {
+#post-box {
   height: 400px;
   width: 100%;
   height: 100%;
@@ -61,11 +62,11 @@ h5 {
   text-overflow: ellipsis;
 }
 
-.post-div h5{
+.post-div h5 {
   color: #997;
 }
 
-.btn{
+.btn {
   display: block;
   width: 200px;
   height: 50px;
@@ -77,16 +78,76 @@ h5 {
   border-radius: 25px;
 }
 
-@media (max-width: 980px) {
-#newpost-box {
-  grid-template-columns: 46vw 46vw;
-  grid-template-rows: 300px 300px;
+
+
+
+
+
+
+#message dt{
+  text-align: center;
+  margin: 20px 40px;
 }
+
+
+#message textarea {
+  display: block;
+  margin: 10px auto;
+  resize: none;
+  border: none;
+  border: 2px solid #cccccc;
+  border-radius: 2px;
+  padding: 10px;
+  width: 60vw;
+  height: 200px;
+}
+
+#message textarea:focus {
+  outline: 0;
+}
+
+#message form input{
+  border: none;
+  padding: 10px;
+  background-color: #997;
+  color: #fafafa;
+  display: block;
+  width: 100px;
+  height: 50px;
+  line-height: 30px;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 25px;
+
+}
+
+footer{
+  font-size: 14px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a{
+  color: #aaa;
+}
+
+
+@media (max-width: 980px) {
+  #newpost-box {
+    grid-template-columns: 46vw 46vw;
+    grid-template-rows: 300px 300px;
+  }
+  #message textarea {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 500px) {
   #newpost-box {
-    grid-template-columns: 90vw ;
+    grid-template-columns: 90vw;
     grid-template-rows: 300px 300px 300px 300px;
   }
-  }
+}
