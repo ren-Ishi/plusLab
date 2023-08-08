@@ -1,0 +1,13 @@
+body{
+  background-color: #fafafa;
+}
+
+#top {
+  height: 60vh;
+  min-height: 400px;
+}
+
+#newpost{
+  background-color: #f2f2f2;
+  height: 300px;
+}
