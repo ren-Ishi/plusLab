@@ -1,11 +1,10 @@
 async function fetchData() {
   try {
-    const response = await fetch('~/js/db.json');
+    const response = await fetch('db.json');
     const jsonData = await response.json();
     
     const dataContainer = document.getElementById('data-container');
 
-    // データを使ってHTML要素を生成して追加する
     jsonData.data.forEach(item => {
       const dataElement = document.createElement('div');
       dataElement.innerHTML = `ID: ${item.id}, Name: ${item.name}`;
