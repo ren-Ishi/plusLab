@@ -64,6 +64,7 @@
 
 :where(a) {
   text-underline-offset: 0.2ex;
+  text-decoration: none;
 }
 
 :where(ul, ol) {
@@ -80,6 +81,7 @@
 }
 
 :where(p, h1, h2, h3, h4, h5, h6) {
+  font-weight: normal;
   overflow-wrap: break-word;
 }
 
