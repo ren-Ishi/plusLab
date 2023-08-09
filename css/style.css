@@ -24,6 +24,13 @@ h1 {
 #top-area {
   height: 60vh;
   min-height: 500px;
+  text-align: center;
+
+}
+
+#top-area h2 {
+  margin: 50px;
+  font-size: 100px;
 }
 
 /* -----------------------------------------------#post-area */
