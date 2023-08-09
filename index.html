@@ -25,16 +25,33 @@
       <section id="newpost-area">
         <h1>新着記事</h1>
         <div id="post-box"></div>
-        <a href="post.html" class="btn">　他の記事も読む　>></a>
+        <a href="post.html" class="btn">他の記事も読む&nbsp;&raquo;</a>
       </section>
       <section id="calendar-area">
         <h1>カレンダー</h1>
+        <div id="schedule">
+          <table id="calendar">
+            <tr>
+              <th style="color: #c1205b;">日</th>
+              <th>月</th>
+              <th>火</th>
+              <th>水</th>
+              <th>木</th>
+              <th>金</th>
+              <th style="color: #206ab3;">土</th>
+            </tr>
+          </table>
+          <div id="event">
+            <h2>開催予定のイベント</h2>
+            <div id="calendar-box"></div>
+          </div>
+        </div>
       </section>
       <section id="message">
         <h1>なんでもBOX</h1>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHirkqUGhVlhXpwWlmEr18vik9KwnucZHEp5bYpCjOOVAZ7g/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
           <dl>
-            <dt>日々のやりたいこと、やって欲しいこと、疑問に思ったこと、感想etc.なんでも気軽に書いてください！</dt>
+            <dt>日々のやりたいこと、やって欲しいこと、疑問に思ったこと、感想etc.なんでも気軽に書いてください！<br>(※送信に数秒かかることがあります。送信後はしばらくお待ちください)</dt>
             <dd><textarea name="entry.534616708" required></textarea></dd>
           </dl>
           <input type="submit" value="送信">
@@ -45,6 +62,7 @@
       <a href="#">plusLab</a>
     </footer>
   </div>
+  <script src="js/calendar.js"></script>
 
 </body>
 

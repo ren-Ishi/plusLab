@@ -19,12 +19,16 @@
   <div id="container">
     <header></header>
     <main>
+      <a href="index.html#newpost-area" class="btn fixed">&laquo;&nbsp;HOMEに戻る</a>
+
       <section id="newpost-area">
         <h1>記事一覧</h1>
         <form id="search-form">
-          <input type="text" id="search-input" placeholder="キーワードを入力してください">
+          <input type="text" id="search-input">
           <button type="submit">検索</button>
+          <button type="button" id="reset-button">リセット</button>
         </form>
+        <div id="tag-list"></div>
         <div id="post-box"></div>
       </section>
     </main>
